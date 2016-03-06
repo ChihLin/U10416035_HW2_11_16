@@ -1,4 +1,4 @@
-//U10416035 ¾Gªé²O
+//U10416035 é„­èŠ·æ·‹
 
 //package chapter5;
 
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class RepeatAdditionQuiz {
 	public static void main(String[] args) {
 
-
+		
 		int number1 = (int)(Math.random() * 10);
 		int number2 = (int)(Math.random() * 10);
 
@@ -21,15 +21,16 @@ public class RepeatAdditionQuiz {
 		System.out.print("What is " + number1 + " * " + number2 + "? ");
 		int answer = input.nextInt();
 
-
+		//while loop -- test the user's ans is true or false 
 		while (number1 * number2 != answer) {
 
 			System.out.print("Wrong answer. Try again. What is " + number1 + " * " + number2 + "?");
 
+			//put the ans to the arraylist
 			list.add(answer);
 			answer = input.nextInt();
 
-
+			// if user input the same ans system will prompt
 			if(list.contains(answer)) {
 				System.out.println("You already entered " + answer);
 			}

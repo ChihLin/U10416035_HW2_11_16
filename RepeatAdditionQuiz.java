@@ -18,13 +18,13 @@ public class RepeatAdditionQuiz {
 		//new a arraylist
 		ArrayList<Integer> list = new ArrayList<>();
 
-		System.out.print("What is " + number1 + " * " + number2 + "? ");
+		System.out.print("What is " + number1 + " + " + number2 + "? ");
 		int answer = input.nextInt();
 
 		//while loop -- test the user's ans is true or false 
-		while (number1 * number2 != answer) {
+		while (number1 + number2 != answer) {
 
-			System.out.print("Wrong answer. Try again. What is " + number1 + " * " + number2 + "?");
+			System.out.print("Wrong answer. Try again. What is " + number1 + " + " + number2 + "?");
 
 			//put the ans to the arraylist
 			list.add(answer);
